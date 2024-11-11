@@ -1,0 +1,12 @@
+h1#titulo{
+  text-decoration: underline;  
+}
+
+.formulario-campos{
+  padding: 10px;
+}
+
+.formulario-campos label{
+  display: inline-block;
+  width: 120px;
+}

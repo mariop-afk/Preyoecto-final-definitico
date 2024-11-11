@@ -1,0 +1,32 @@
+[
+  {
+      "title": "El reloj inteligente más avanzado de 2024",
+      "description": "Este nuevo reloj inteligente cuenta con monitoreo de salud, conectividad 5G y hasta 15 días de duración de batería. Ideal para quienes buscan tecnología avanzada en la muñeca.",
+      "date": "08-11-2024",
+      "image": "./images/12.jpg"
+  },
+  {
+      "title": "Reloj clásico que vuelve a ser tendencia",
+      "description": "El modelo clásico de 1970 regresa con una edición limitada. Su diseño retro y mecanismos tradicionales lo convierten en una pieza deseada por coleccionistas.",
+      "date": "09-11-2024",
+      "image": "./images/2.jpg"
+  },
+  {
+      "title": "Relojes de lujo: los más vendidos en 2024",
+      "description": "El mercado de relojes de lujo sigue creciendo. Marcas como Rolex y Patek Philippe dominan el sector con modelos que alcanzan precios récord.",
+      "date": "10-11-2024",
+      "image": "./images/3.jpg"
+  },
+  {
+      "title": "Los mejores relojes deportivos para aventureros",
+      "description": "Este año, varios relojes deportivos destacan por su resistencia y funciones avanzadas para deportes extremos. Marcas como Garmin y Suunto lideran esta categoría.",
+      "date": "11-11-2024",
+      "image": "./images/13.jpg"
+  },
+  {
+      "title": "El reloj solar ecológico que no necesita carga",
+      "description": "Este reloj innovador se carga completamente con energía solar, ofreciendo una alternativa sostenible sin necesidad de reemplazar baterías.",
+      "date": "13-11-2024",
+      "image": "./images/15.png"
+  }
+]

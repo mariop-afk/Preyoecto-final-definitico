@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/presupuestos.js"></script>
+</head>
+<body>
+    
+    <h1 id="titulo">Formulario de Solicitud</h1>
+
+    <form method="post">
+        <fieldset>
+            <legend>Datos de Contacto</legend>
+            
+            <div class="formulario-campos">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+
+            <div class="formulario-campos">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" name="apellidos" id="apellidos">
+            </div>
+
+            <div class="formulario-campos">
+                <label for="telefono">Teléfono</label>
+                <input type="text" name="telefono" id="telefono" value="">
+            </div>
+
+            <div class="formulario-campos">
+                <label for="correo">Email</label>
+                <input type="text" name="correo" id="correo" value="">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Presupuesto</legend>
+
+            <div class="formulario-campos">
+                <label for="producto">Producto:</label>
+                <select name="producto" id="producto" onchange="calcular_presupuesto(this.form)">
+                    <option value="50">Reloj 1</option>
+                    <option value="100">Reloj 2</option>
+                    <option value="150">Reloj 3</option>
+                </select>
+            </div>
+
+            <div class="formulario-campos">
+                <label for="Plazo">plazo</label>
+                <input type="number" name="Plazo" id="Plazo" min="1" value="" onchange="calcular_presupuesto(this.form)">
+            </div>
+
+            <div class="formulario-campos">
+                <p>Elige los extras para el producto</p>
+                <input type="checkbox" name="extra_1" id="extra_1" onchange="calcular_presupuesto(this.form)"> Extra 1
+                <input type="checkbox" name="extra_2" id="extra_2" onchange="calcular_presupuesto(this.form)"> Extra 2
+                <input type="checkbox" name="extra_3" id="extra_3" onchange="calcular_presupuesto(this.form)"> Extra 3
+            </div>
+
+            <div class="formulario-campos">
+                <label for="presupuesto_final">Presupuesto Final</label>
+                <input type="text" name="presupuesto_final" id="presupuesto_final" readonly>
+            </div>
+
+        </fieldset>
+
+
+        <input type="button" value="Enviar" onclick="validar(this.form);">
+    </form>
+    
+
+
+
+
+</body>
+</html>

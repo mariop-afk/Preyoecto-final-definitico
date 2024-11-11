@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+
+        <link rel="stylesheet" href="../css/estructura.css">
+        <link rel="stylesheet" href="../css/presupuestos.css">
+
+        <script src="../js/presupuestos.js"></script>
+        <link rel="icon" href="../images/logo.ico" type="image/x-icon">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        
+        <header>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/light_logo.png" alt="Logo de Mi Sitio Web" width="150">
+                </a>
+            </div>
+            
+            <!-- Navegación principal -->
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="presupuesto.html" class="menu-activo">Presupuesto</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section>
+                <h1 id="titulo">Formulario de Solicitud</h1>
+                
+                <form method="post">
+                    <fieldset>
+                        <legend>Datos de Contacto</legend>
+                        
+                        <div class="formulario-campos">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre">
+                        </div>
+
+                        <div class="formulario-campos">
+                            <label for="apellidos">Apellidos</label>
+                            <input type="text" name="apellidos" id="apellidos">
+                        </div>
+
+                        <div class="formulario-campos">
+                            <label for="telefono">Teléfono</label>
+                            <input type="text" name="telefono" id="telefono" value="">
+                        </div>
+
+                        <div class="formulario-campos">
+                            <label for="correo">Email</label>
+                            <input type="text" name="correo" id="correo" value="">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Presupuesto</legend>
+
+                        <div class="formulario-campos">
+                            <label for="producto">Producto:</label>
+                            <select name="producto" id="producto" onchange="calcular_presupuesto(this.form)">
+                                <option value="50">Reloj 1</option>
+                                <option value="100">Reloj 2</option>
+                                <option value="150">Reloj 3</option>
+                            </select>
+                        </div>
+
+                        <div class="formulario-campos">
+                            <label for="plazo">plazo</label>                       
+                            <input type="number" name="plazo" id="plazo" min="1" value="1" onchange="calcular_presupuesto(this.form)">
+                            <span class="transparent-text">(Descuentos a partir del día 10)</span>
+                        </div>
+
+                        <div class="formulario-campos">
+                            <p>Elige los extras para el producto</p>
+                            <input type="checkbox" name="extra_1" id="extra_1" onchange="calcular_presupuesto(this.form)"> Correa de cuero ($20)
+                            <input type="checkbox" name="extra_2" id="extra_2" onchange="calcular_presupuesto(this.form)"> Grabado personalizado ($30)
+                            <input type="checkbox" name="extra_3" id="extra_3" onchange="calcular_presupuesto(this.form)"> Garantía extendida ($40)
+                        </div>
+
+                        <div class="formulario-campos">
+                            <label for="presupuesto_final">Presupuesto Final</label>
+                            <input type="text" name="presupuesto_final" id="presupuesto_final" value="50" readonly>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Aceptación condiciones y envío de presupuesto</legend>
+                        
+                        <div class="formulario-campos">
+                            He leído la política de privacidad <input type="checkbox" name="politica" id="politica">
+                        </div>
+
+                        <input type="reset" value="Limpiar formulario">
+                        <input type="button" value="Enviar" onclick="validar(this.form);"> 
+                    </fieldset>
+                </form>
+
+            </section>
+        </main>
+
+        
+        <footer class="footer">
+            <ul class="social-icon">
+
+              <li class="icon-elem">
+                <a href="https://www.youtube.com/user/LOTUSwatches/featured" class="icon">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+
+              <li class="icon-elem">
+                <a href="https://www.instagram.com/lotus.watches/" class="icon">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li> 
+
+              <li class="icon-elem">
+                <a href="https://www.facebook.com/LotusWatches" class="icon" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+            </ul>
+
+
+            <p style="font-size: 0.8em; text-align: center; margin-top: 20px;">
+                &copy; 2024 Palacios Watch. Todos los derechos reservados. <br>
+                Aviso legal
+            </p>
+            
+        </footer>
+    </body>
+</html>

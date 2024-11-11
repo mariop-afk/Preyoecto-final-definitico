@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Galería</title>
+
+        <link rel="stylesheet" href="../css/estructura.css">
+        <link rel="stylesheet" href="../css/galeria.css">
+
+        <link rel="icon" href="../images/logo.ico" type="image/x-icon">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script type="module"  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/light_logo.png" alt="Logo de Mi Sitio Web" width="150">
+                </a>
+            </div>
+
+            <!-- Navegación principal -->
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="galeria.html" class="menu-activo">Galería</a></li>
+                    <li><a href="presupuesto.html">Presupuesto</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="ful-img" id="fulImgBox">
+                <img src="../images/1.jpg" id="fulImg" alt="">
+                <span onclick="closeImg()">X</span>
+            </div>
+
+            <h1><span>Galeria</span></h1>
+            <div class="img-gallery">
+                <img src="../images/1.jpg" onclick="openFulImg(this.src)" alt="">
+                <img src="../images/2.jpg" onclick="openFulImg(this.src)" alt="">
+                <img src="../images/3.jpg" onclick="openFulImg(this.src)" alt="">
+                <img src="../images/4.jpg" onclick="openFulImg(this.src)" alt="">
+                <img src="../images/5.jpg" onclick="openFulImg(this.src)" alt="">
+                <img src="../images/6.png" onclick="openFulImg(this.src)" alt="">
+                <img src="../images/7.png" onclick="openFulImg(this.src)" alt="">
+                <img src="../images/8.jpg" onclick="openFulImg(this.src)" alt="">
+                <img src="../images/9.jpg" onclick="openFulImg(this.src)" alt="">
+                <img src="../images/10.jpg" onclick="openFulImg(this.src)" alt="">
+            </div>
+            
+        </main>
+    
+
+        
+        <footer class="footer">
+            <ul class="social-icon">
+
+              <li class="icon-elem">
+                <a href="https://www.youtube.com/user/LOTUSwatches/featured" class="icon">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+
+              <li class="icon-elem">
+                <a href="https://www.instagram.com/lotus.watches/" class="icon">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li> 
+
+              <li class="icon-elem">
+                <a href="https://www.facebook.com/LotusWatches" class="icon" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+            </ul>
+            
+            <p style="font-size: 0.8em; text-align: center; margin-top: 20px;">
+                &copy; 2024 Palacios Watch. Todos los derechos reservados. <br>
+                Aviso legal
+            </p>
+
+        </footer>
+            
+        <script src="../js/galeria.js"></script>
+    </body>
+</html>
